@@ -28,6 +28,7 @@ const Wrapper = styled.section`
   }
   h1 {
     margin-bottom: 1.5rem;
+    color: #fff;
   }
 `;
 export default Login;
