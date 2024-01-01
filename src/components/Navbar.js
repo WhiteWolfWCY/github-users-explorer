@@ -34,7 +34,7 @@ const Navbar = () => {
 const Wrapper = styled.nav`
   padding: 1.5rem;
   margin-bottom: 4rem;
-  background: var(--clr-white);
+  background: #3e3e42;
   text-align: center;
   display: grid;
   grid-template-columns: auto auto 100px;
@@ -44,6 +44,7 @@ const Wrapper = styled.nav`
   h4 {
     margin-bottom: 0;
     font-weight: 400;
+    color: #fff;
   }
   img {
     width: 35px !important;
@@ -52,13 +53,20 @@ const Wrapper = styled.nav`
     object-fit: cover;
   }
   button {
-    background: transparent;
-    border: transparent;
+    background: hsl(104, 62%, 45%);
+    border: none;
+    border-radius: 1.5rem; /* rounded-xl */
     font-size: 1.2rem;
     text-transform: capitalize;
+    transition: var(--transition);
     letter-spacing: var(--spacing);
-    color: var(--clr-grey-5);
+    color: white;
     cursor: pointer;
+    padding: 10px 10px;
+  }
+  button:hover{
+    background: hsl(103, 80%, 74%);
+    color: var(--clr-primary-1);
   }
 `;
 

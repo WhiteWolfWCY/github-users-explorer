@@ -67,17 +67,18 @@ const Wrapper = styled.div`
       letter-spacing: var(--spacing);
     }
     button {
-      border-radius: 5px;
+      border: none;
+      border-radius: 1.5rem; 
+      padding: 10px 10px;
       border-color: transparent;
-      padding: 0.25rem 0.5rem;
       text-transform: capitalize;
       letter-spacing: var(--spacing);
-      background: var(--clr-primary-5);
+      background: hsl(104, 62%, 45%);
       color: var(--clr-white);
       transition: var(--transition);
       cursor: pointer;
       &:hover {
-        background: var(--clr-primary-8);
+        background: hsl(103, 80%, 74%);
         color: var(--clr-primary-1);
       }
     }
